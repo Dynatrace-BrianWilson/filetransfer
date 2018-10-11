@@ -11,4 +11,3 @@ spec:
       image: postgres:9.4
       ports:
       - containerPort: 5432
-

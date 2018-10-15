@@ -1,0 +1,33 @@
+apiVersion: extensions/v1beta1
+kind: Ingress
+metadata:
+  annotations:
+    kubernetes.io/ingress.allow-http: "true"
+    nginx.ingress.kubernetes.io/affinity: cookie
+    nginx.ingress.kubernetes.io/session-cookie-hash: sha1
+    nginx.ingress.kubernetes.io/session-cookie-name: route
+  creationTimestamp: null
+  generation: 1
+  name: demo-live-2
+  namespace: demo-live-2
+  selfLink: /apis/extensions/v1beta1/namespaces/demo-live-2/ingresses/demo-live-2
+spec:
+  rules:
+  - host: demo-live-2.lab.dynatrace.org
+    http:
+      paths:
+      - backend:
+          serviceName: easytravel-frontend
+          servicePort: 8080
+        path: /
+  tls:
+  - hosts:
+    - demo-live-2.lab.dynatrace.org
+status:
+  loadBalancer:
+    ingress:
+    - {}
+
+
+
+

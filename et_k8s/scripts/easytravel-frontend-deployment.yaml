@@ -10,7 +10,7 @@ metadata:
     io.kompose.service: easytravel-frontend
   name: easytravel-frontend
 spec:
-  replicas: 2
+  replicas: 1
   strategy: {}
   template:
     metadata:

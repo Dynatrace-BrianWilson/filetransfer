@@ -1,5 +1,7 @@
 #!/bin/sh
 
+echo "creating namespace 'demo-live-1'"
+kubectl create ns demo-live-1
 echo "Creating easyTravel on demo1"
 ./setup_demo1.sh
 ./create.sh

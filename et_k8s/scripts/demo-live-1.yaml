@@ -13,7 +13,7 @@ metadata:
   selfLink: /apis/extensions/v1beta1/namespaces/demo-live-1/ingresses/demo-live-1
 spec:
   rules:
-  - host: 35.209.5.87
+  - host: "change me, bro"
     http:
       paths:
       - backend:
@@ -22,7 +22,7 @@ spec:
         path: /
   tls:
   - hosts:
-    - 35.209.5.87
+    - "change me, bro"
 status:
   loadBalancer:
     ingress:
